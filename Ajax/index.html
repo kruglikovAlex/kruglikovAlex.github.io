@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="AJAX_guery">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ajax news</title>
+    <meta name="description" content="Ajax with HTML5, CSS3 and JAVASCRIPT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="view/css/view.css" />
+</head>
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <div id="demo">
+        <h2>Let AJAX change this text
+            <button type="button" onclick='getNews("https://newsapi.org/v1/articles",newsBBC)'>Get BBC News</button>
+            <button type="button" onclick='getNews("https://newsapi.org/v1/articles",newsTechcrunch)'>Get Techcrunch News</button>
+            <button type="button" onclick='getNews("https://newsapi.org/v1/articles",newsTheNextWeb)'>Get The-next-web News</button></h2>
+    </div>
+    <ul id="list" class="container">
+    </ul>
+    <div id="news" class="container">
+        <textarea id="testJson" name="testJson" rows="10"></textarea>
+    </div>
+
+    <script src="model/model.js"></script>
+    <script src="controller/controller.js"></script>
+    <script src="view/js/view.js"></script>
+</body>
+
+</html>
